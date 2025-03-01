@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "Firebase Complete View",
+    "version": "1.0",
+    "author": "Aleixer",
+    "homepage_url": "https://github.com/TuGitHub",
+    "description":      "Vista de la base de datos de Firebase, más amplia.",
+    "permissions":      ["scripting", "activeTab", "storage",  "alarms", "tabs"],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "css":      ["rtb.css"],
+        "run_at":  "document_start"
+      }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["rtb.css"],
+            "matches":   ["<all_urls>"]
+        }
+    ],
+    "icons": {
+        "16": "icons/icon16.png",
+        "32": "icons/icon32.png",
+        "64": "icons/icon64.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icons/icon16.png",
+            "32": "icons/icon32.png",
+            "64": "icons/icon64.png"
+        },
+        "default_title": "FirebaseFullView"
+    }
+
+  }
+  
